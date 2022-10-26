@@ -37,7 +37,7 @@ class BancoNacionParser():
 		self.url = url;
 	
 	def openUrl(self):
-		response = urllib.urlopen(self.url)
+		response = urllib.request.urlopen(self.url)
 		html = response.read()
 		return html
 
